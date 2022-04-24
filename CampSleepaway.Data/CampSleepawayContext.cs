@@ -24,7 +24,6 @@ public class CampSleepawayContext : DbContext
         base.OnConfiguring(optionsBuilder);
 
         //Connection to Paul:
-
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
