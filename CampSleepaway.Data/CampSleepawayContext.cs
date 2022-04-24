@@ -16,16 +16,15 @@ public class CampSleepawayContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         //Connection to Pandora:
-        //optionsBuilder.UseSqlServer("Data Source= Pandora\\SqlExpress; " +
-        //                            "Initial Catalog=CampSleepaway; " +
-        //                            "Integrated Security=True; " +
-        //                            "Trustservercertificate=true; " +
-        //                            "Trusted_Connection=True");
-        //base.OnConfiguring(optionsBuilder);
+        optionsBuilder.UseSqlServer("Data Source= Pandora\\SqlExpress; " +
+                                    "Initial Catalog=CampSleepaway; " +
+                                    "Integrated Security=True; " +
+                                    "Trustservercertificate=true; " +
+                                    "Trusted_Connection=True");
+        base.OnConfiguring(optionsBuilder);
 
         //Connection to Paul:
-        optionsBuilder.UseSqlServer("Data Source=DESKTOP-T2GL85N\\SQLEXPRESS2017;Initial Catalog=CS_Susannah_Andersson;Integrated Security=True");
-        base.OnConfiguring(optionsBuilder);
+
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
