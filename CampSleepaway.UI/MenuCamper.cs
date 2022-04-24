@@ -95,6 +95,7 @@ namespace CampSleepaway.UI
                 {
                     Console.WriteLine($"\tWarning: No counselor is assigned to cabin Id {uiCabinId}");
                 }
+                ListAllCampers();
                 Console.WriteLine("Enter camper Id:");
                 int uiCamperId = int.Parse(Console.ReadLine());
                 DateTime enterDate = DateTime.Today;
