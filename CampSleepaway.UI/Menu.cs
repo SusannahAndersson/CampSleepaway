@@ -12,7 +12,7 @@ namespace CampSleepaway.UI
             bool stopLoop = false;
             Console.WriteLine(
                 FiggleFonts.Ogre.Render("Camp Sleepaway") +
-                    "Make a choice to modify:\n\n" +
+                    "\tMake a choice to modify:\n\n" +
                     "(1) Campers\n" +
                     "(2) Counselors\n" +
                     "(3) Next of kins\n" +
