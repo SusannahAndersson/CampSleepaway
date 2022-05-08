@@ -1,4 +1,5 @@
 ﻿using CampSleepaway.Data;
+using Figgle;
 
 namespace CampSleepaway.UI
 {
@@ -10,7 +11,7 @@ namespace CampSleepaway.UI
         {
             bool stopLoop = false;
             Console.WriteLine(
-                "\tWelcome to Camp Sleepaway\n" +
+                FiggleFonts.Ogre.Render("Camp Sleepaway") +
                     "Make a choice to modify:\n\n" +
                     "(1) Campers\n" +
                     "(2) Counselors\n" +
